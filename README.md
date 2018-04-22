@@ -2,6 +2,7 @@
 In the event of a wildfire or other natural disasters we help civilians and public authorities best communicate the necessary information - even without cell tower communications - in order to save more lives.
 
 [BlueFire website: as seen by authorities](https://bluefire.netlify.com/home)
+
 [Some notes about WorkDay Pulse Point](https://docs.google.com/document/d/19Lc4Eyt837jIfE4nofgFYoItMu48j5Cj4rgf3vBrBxA/edit#)
 
 [![alt_text](https://github.com/cwllau/BlueFire_Firecode/blob/master/menu_screenshot.PNG)](https://www.youtube.com/watch?v=wAQ0-3zr5Hg)
