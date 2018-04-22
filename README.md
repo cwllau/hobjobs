@@ -4,7 +4,7 @@ In the event of a wildfire or other natural disasters we help civilians and publ
 [BlueFire website: as seen by authorities](https://bluefire.netlify.com/home)
 
 
-![alt_text](https://youtu.be/wAQ0-3zr5Hg)
+![alt_text](https://www.youtube.com/watch?v=wAQ0-3zr5Hg)
 ![alt text](https://github.com/cwllau/BlueFire_Firecode/blob/master/firebase.PNG)
 
 
