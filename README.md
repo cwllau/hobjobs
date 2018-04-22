@@ -5,7 +5,8 @@ In the event of a wildfire or other natural disasters we help civilians and publ
 
 
 
-![alt text](https://github.com/cwllau/GrassRootsMarketing/blob/master/website_pic.png)
+![alt text](https://github.com/cwllau/BlueFire_Firecode/blob/master/firebase.PNG)
+
 
 
 # How it works:
