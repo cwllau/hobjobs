@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                         String locationList = String.valueOf(parent.getItemAtPosition(position));
                         Toast.makeText(MainActivity.this, locationList, Toast.LENGTH_SHORT).show();
 
-                        Intent page = new Intent(MainActivity.this, MapsActivity.class);
+                        Intent page = new Intent(MainActivity.this, JobListings.class);
                         startActivity(page);
                     }
                 }
