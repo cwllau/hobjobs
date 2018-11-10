@@ -42,7 +42,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/TF_location"
         android:onClick="onClick"
-        android:text="Fire" />
+        android:text="Jobs" />
 
     <Button
         android:id="@+id/B_resources"
@@ -51,7 +51,7 @@
         android:layout_below="@+id/TF_location"
         android:layout_toEndOf="@+id/B_fire"
         android:onClick="onClick"
-        android:text="Resources" />
+        android:text="Clinics" />
 
     <Button
         android:id="@+id/B_evacuate"
@@ -60,7 +60,7 @@
         android:layout_below="@+id/TF_location"
         android:layout_toEndOf="@+id/B_resources"
         android:onClick="onClick"
-        android:text="Evacuate" />
+        android:text="Food banks" />
 
     <Button
         android:id="@+id/B_menu"
