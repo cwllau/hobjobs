@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Setting emojis to Menu
-        String[] locationList = {"\uD83D\uDD25 Find Fire",
+        String[] locationList = {"\uD83D\uDD25 Find Job",
                 "\uD83D\uDE91\uD83C\uDF1F Medical Aid", "\uD83D\uDE92\uD83C\uDF1F Find Responders",
                 "\uD83D\uDC99 Bluetooth Connect", "\uD83C\uDFE5 Shelters",
                 "\uD83D\uDCB5 Donate to Relief", "\uD83D\uDCCD FAQ",
