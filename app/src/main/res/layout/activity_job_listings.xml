@@ -57,32 +57,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchKeywords" />
 
-    <Button
-        android:id="@+id/dashboard"
-        android:layout_width="128dp"
-        android:layout_height="54dp"
-        android:text="Dashboard"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/inbox"
-        app:layout_constraintStart_toEndOf="@+id/listings" />
-
-    <Button
-        android:id="@+id/listings"
-        android:layout_width="128dp"
-        android:layout_height="54dp"
-        android:text="Job Listings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/inbox"
-        android:layout_width="128dp"
-        android:layout_height="54dp"
-        android:text="Inbox"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -98,155 +74,127 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <Button
+                android:id="@+id/job1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="100dp"
+                android:text="Job 1"
+                tools:layout_editor_absoluteX="204dp"
+                tools:layout_editor_absoluteY="239dp" />
 
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/job1"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:text="Job 1"
-                    tools:layout_editor_absoluteX="204dp"
-                    tools:layout_editor_absoluteY="239dp" />
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/job2"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:text="Job 2"
-                    tools:layout_editor_absoluteX="28dp"
-                    tools:layout_editor_absoluteY="239dp" />
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/job1date"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:text="11/2/2018" />
 
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/job3"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:text="Job 3"
-                    tools:layout_editor_absoluteX="204dp"
-                    tools:layout_editor_absoluteY="239dp" />
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/job4"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:text="Job 4"
-                    tools:layout_editor_absoluteX="28dp"
-                    tools:layout_editor_absoluteY="239dp" />
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
-            <LinearLayout
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="20dp" />
 
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/job5"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:text="Job 5"
-                    tools:layout_editor_absoluteX="204dp"
-                    tools:layout_editor_absoluteY="239dp" />
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/job6"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:text="Job 6"
-                    tools:layout_editor_absoluteX="28dp"
-                    tools:layout_editor_absoluteY="239dp" />
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
-            <LinearLayout
+            <Button
+                android:id="@+id/job2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="100dp"
+                android:text="Job 2"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="239dp" />
 
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+            <TextView
+                android:id="@+id/job2date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11/3/2018" />
 
-                <Button
-                    android:id="@+id/job7"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:text="Job 7"
-                    tools:layout_editor_absoluteX="204dp"
-                    tools:layout_editor_absoluteY="239dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
 
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+            <Button
+                android:id="@+id/job3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Job 3"
+                tools:layout_editor_absoluteX="204dp"
+                tools:layout_editor_absoluteY="239dp" />
 
-                <Button
-                    android:id="@+id/job8"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:text="Job 8"
-                    tools:layout_editor_absoluteX="28dp"
-                    tools:layout_editor_absoluteY="239dp" />
+            <TextView
+                android:id="@+id/job3date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11/5/2018" />
 
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/job4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Job 4"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="239dp" />
+
+            <TextView
+                android:id="@+id/job4date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11/8/2018" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/job5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Job 5"
+                tools:layout_editor_absoluteX="204dp"
+                tools:layout_editor_absoluteY="239dp" />
+
+            <TextView
+                android:id="@+id/job5date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11/10/2018" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
 
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/listings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Job listings" />
+
+        <Button
+            android:id="@+id/dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Dashboard" />
+
+        <Button
+            android:id="@+id/inbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Inbox" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
