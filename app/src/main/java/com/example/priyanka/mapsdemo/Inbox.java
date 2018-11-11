@@ -6,26 +6,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Dashboard extends AppCompatActivity {
+public class Inbox extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_inbox);
 
 
         Button btnToListings = (Button)findViewById(R.id.btnToListings);
-        Button btnToInbox = (Button)findViewById(R.id.btnToInbox );
+        Button btnToDash = (Button)findViewById(R.id.btnToDash);
+
         btnToListings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Dashboard.this, JobListings.class));
-            }});
-        btnToInbox.setOnClickListener(new View.OnClickListener() {
+                startActivity(new Intent(Inbox.this, JobListings.class));
+            }
+        });
+
+        btnToDash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Dashboard.this, Inbox.class));
-            }});
+                startActivity(new Intent(Inbox.this, Dashboard.class));
+            }
+        });
     }
 }
-
