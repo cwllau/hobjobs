@@ -38,7 +38,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".JobListings" />
-        <activity android:name=".SingleJobListing"></activity>
+        <activity android:name=".SingleJobListing" />
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

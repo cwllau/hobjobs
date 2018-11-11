@@ -35,10 +35,36 @@ public class MainActivity extends AppCompatActivity {
                         String locationList = String.valueOf(parent.getItemAtPosition(position));
                         Toast.makeText(MainActivity.this, locationList, Toast.LENGTH_SHORT).show();
 
-                        Intent page = new Intent(MainActivity.this, JobListings.class);
-                        startActivity(page);
+                        //Goes to Job listing
+                        if (position == 0)
+                        {
+                            Intent page = new Intent(MainActivity.this, JobListings.class);
+                            startActivity(page);
+                        }
+
+                        //goes to google maps api
+                        if (position == 1)
+                        {
+                            Intent dash  = new Intent(MainActivity.this, MapsActivity.class);
+                            startActivity(dash);
+                        }
+
+                        //goes to dashboard
+                        if (position == 2)
+                        {
+                            Intent dash  = new Intent(MainActivity.this, Dashboard.class);
+                            startActivity(dash);
+                        }
+
+                        //goes to dashboard if else
+                        if (position > 2)
+                        {
+                            Intent dash  = new Intent(MainActivity.this, Dashboard.class);
+                            startActivity(dash);
+                        }
                     }
                 }
+
         );
 
 
