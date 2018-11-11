@@ -53,6 +53,8 @@ LocationListener{
     public static final int REQUEST_LOCATION_CODE = 99;
     int PROXIMITY_RADIUS = 10000;
     double latitude,longitude;
+    private Marker pmarker;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -117,8 +119,8 @@ LocationListener{
         LatLng oahu_church = new LatLng(35.302658, -120.664734);
         mMap.addMarker(new MarkerOptions().position(oahu_church).title("Shelter")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
-        LatLng aloha_dog = new LatLng(35.302036, -120.662770);
-        mMap.addMarker(new MarkerOptions().position(aloha_dog).title("House Exterior Painting")
+        LatLng housepaint = new LatLng(35.302036, -120.662770);
+        pmarker = mMap.addMarker(new MarkerOptions().position(housepaint).title("House Exterior Painting")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
         LatLng parking_lot = new LatLng(35.301327, -120.664905);
         mMap.addMarker(new MarkerOptions().position(parking_lot).title("Help with Knitting")
