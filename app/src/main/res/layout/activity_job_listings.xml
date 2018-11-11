@@ -6,195 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".JobListings">
 
-    <Button
-        android:id="@+id/mapView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/messages"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/searchKeywords"
-        android:layout_width="347dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="651dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapView" />
-
-    <Button
-        android:id="@+id/sort"
-        android:layout_width="115dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
-        android:text="Sort"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchKeywords" />
-
-    <Button
-        android:id="@+id/filter"
-        android:layout_width="115dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="16dp"
-        android:text="Filter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchKeywords" />
-
-    <ScrollView
-        android:id="@+id/scrollView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@color/common_google_signin_btn_text_dark_default" />
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/listings" />
+
+    <Button
+        android:id="@+id/job1"
+        android:layout_width="378dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/job2"
+        android:layout_width="378dp"
+        android:layout_height="174dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="290dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sort">
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/job1"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="Job 1"
-                tools:layout_editor_absoluteX="204dp"
-                tools:layout_editor_absoluteY="239dp" />
-
-            <TextView
-                android:id="@+id/job1date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="11/2/2018" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <Button
-                android:id="@+id/job2"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="Job 2"
-                tools:layout_editor_absoluteX="28dp"
-                tools:layout_editor_absoluteY="239dp" />
-
-            <TextView
-                android:id="@+id/job2date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="11/3/2018" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <Button
-                android:id="@+id/job3"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="Job 3"
-                tools:layout_editor_absoluteX="204dp"
-                tools:layout_editor_absoluteY="239dp" />
-
-            <TextView
-                android:id="@+id/job3date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="11/5/2018" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <Button
-                android:id="@+id/job4"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="Job 4"
-                tools:layout_editor_absoluteX="28dp"
-                tools:layout_editor_absoluteY="239dp" />
-
-            <TextView
-                android:id="@+id/job4date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="11/8/2018" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <Button
-                android:id="@+id/job5"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="Job 5"
-                tools:layout_editor_absoluteX="204dp"
-                tools:layout_editor_absoluteY="239dp" />
-
-            <TextView
-                android:id="@+id/job5date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="11/10/2018" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/job3"
+        android:layout_width="378dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="105dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/listings"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Job listings" />
-
-        <Button
-            android:id="@+id/dashboard"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Dashboard" />
-
-        <Button
-            android:id="@+id/inbox"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Inbox" />
-    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
