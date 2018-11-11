@@ -118,16 +118,16 @@ LocationListener{
         mMap.addMarker(new MarkerOptions().position(oahu_church).title("Shelter")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
         LatLng aloha_dog = new LatLng(35.302036, -120.662770);
-        mMap.addMarker(new MarkerOptions().position(aloha_dog).title("Firefighter Bob")
+        mMap.addMarker(new MarkerOptions().position(aloha_dog).title("House Exterior Painting")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
         LatLng parking_lot = new LatLng(35.301327, -120.664905);
-        mMap.addMarker(new MarkerOptions().position(parking_lot).title("Medical Aid")
+        mMap.addMarker(new MarkerOptions().position(parking_lot).title("Help with Knitting")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
         LatLng chick = new LatLng(35.299584, -120.659891);
-        mMap.addMarker(new MarkerOptions().position(chick).title("Firefighter Joe")
+        mMap.addMarker(new MarkerOptions().position(chick).title("Lawn Mowing")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
         LatLng oahu_church1 = new LatLng(35.296167, -120.659820);
-        mMap.addMarker(new MarkerOptions().position(oahu_church1).title("Medical Aid")
+        mMap.addMarker(new MarkerOptions().position(oahu_church1).title("Pet Sitting")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
 
@@ -287,7 +287,7 @@ LocationListener{
 //                getNearbyPlacesData.execute(dataTransfer);
                 Intent main_page2 = new Intent(MapsActivity.this, MainActivity.class);
                 startActivity(main_page2);
-                Toast.makeText(MapsActivity.this, "BlueFire Menu", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MapsActivity.this, "Menu", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.B_menu:
                     mMap.clear();

@@ -21,7 +21,7 @@
                 android:id="@+id/listing"
                 android:layout_width="match_parent"
                 android:layout_height="581dp"
-                app:srcCompat="@drawable/singlejoblisting" />
+                app:srcCompat="@drawable/singlejoblisting_price" />
 
             <ImageView
                 android:id="@+id/map"
