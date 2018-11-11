@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Setting emojis to Menu
-        String[] locationList = {"\uD83D\uDD25 Find Job",
-                "\uD83D\uDE91\uD83C\uDF1F Medical Aid", "\uD83D\uDE92\uD83C\uDF1F Find Responders",
-                "\uD83D\uDC99 Bluetooth Connect", "\uD83C\uDFE5 Shelters",
-                "\uD83D\uDCB5 Donate to Relief", "\uD83D\uDCCD FAQ",
-                "\uD83D\uDCCD Contact Us"};
+        String[] locationList = {"\uD83D\uDCBC Job Listings",
+                "\uD83D\uDDFA Job Search Map", "\uD83D\uDCAC Chat with Recruiters","\uD83C\uDFE5 Clinics",
+                "\uD83D\uDC99 Food Bank", "\uD83C\uDFE0 Shelters",
+                "\uD83D\uDCB5 Interview Tips", "❓ FAQ",
+                "\uD83D\uDCCD Offline Maps"};
         ListAdapter LocationAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,locationList);
         ListView LocationView = (ListView) findViewById(R.id.locations);
         LocationView.setAdapter(LocationAdapter);
