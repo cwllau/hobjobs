@@ -17,6 +17,8 @@ public class JobListings extends AppCompatActivity {
         Button btn2 = (Button)findViewById(R.id.job2);
         Button btn3 = (Button)findViewById(R.id.job3);
         Button btnToMap = (Button)findViewById(R.id.btnToMap);
+        Button btnToDash = (Button)findViewById(R.id.btnToDash);
+        Button btnToInbox = (Button)findViewById(R.id.btnToInbox);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +42,12 @@ public class JobListings extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(JobListings.this, MapsActivity.class));
+            }
+        });
+        btnToDash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(JobListings.this, Dashboard.class));
             }
         });
 
